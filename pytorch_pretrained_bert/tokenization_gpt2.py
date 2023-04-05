@@ -34,17 +34,6 @@ from .file_utils import cached_path
 
 logger = logging.getLogger(__name__)
 
-PRETRAINED_VOCAB_ARCHIVE_MAP = {
-    'gpt2': "https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-vocab.json",
-}
-PRETRAINED_MERGES_ARCHIVE_MAP = {
-    'gpt2': "https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-merges.txt",
-}
-PRETRAINED_VOCAB_POSITIONAL_EMBEDDINGS_SIZE_MAP = {
-    'gpt2': 1024,
-}
-VOCAB_NAME = 'vocab.json'
-MERGES_NAME = 'merges.txt'
 
 @lru_cache()
 def bytes_to_unicode():
