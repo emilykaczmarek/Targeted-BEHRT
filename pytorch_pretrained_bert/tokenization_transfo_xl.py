@@ -40,16 +40,6 @@ else:
 
 logger = logging.getLogger(__name__)
 
-PRETRAINED_VOCAB_ARCHIVE_MAP = {
-    'transfo-xl-wt103': "https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-vocab.bin",
-}
-VOCAB_NAME = 'vocab.bin'
-
-PRETRAINED_CORPUS_ARCHIVE_MAP = {
-    'transfo-xl-wt103': "https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-corpus.bin",
-}
-CORPUS_NAME = 'corpus.bin'
-
 class TransfoXLTokenizer(object):
     """
     Transformer-XL tokenizer adapted from Vocab class in https://github.com/kimiyoung/transformer-xl
