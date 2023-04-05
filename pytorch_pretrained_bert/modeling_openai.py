@@ -39,11 +39,6 @@ from .modeling import BertLayerNorm as LayerNorm
 
 logger = logging.getLogger(__name__)
 
-PRETRAINED_MODEL_ARCHIVE_MAP = {"openai-gpt": "https://s3.amazonaws.com/models.huggingface.co/bert/openai-gpt-pytorch_model.bin"}
-PRETRAINED_CONFIG_ARCHIVE_MAP = {"openai-gpt": "https://s3.amazonaws.com/models.huggingface.co/bert/openai-gpt-config.json"}
-
-CONFIG_NAME = "config.json"
-WEIGHTS_NAME = "pytorch_model.bin"
 
 def load_tf_weights_in_openai_gpt(model, openai_checkpoint_folder_path):
     """ Load tf pre-trained weights in a pytorch model (from NumPy arrays here)
