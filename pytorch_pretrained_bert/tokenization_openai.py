@@ -30,17 +30,6 @@ from .tokenization import BasicTokenizer
 
 logger = logging.getLogger(__name__)
 
-PRETRAINED_VOCAB_ARCHIVE_MAP = {
-    'openai-gpt': "https://s3.amazonaws.com/models.huggingface.co/bert/openai-gpt-vocab.json",
-}
-PRETRAINED_MERGES_ARCHIVE_MAP = {
-    'openai-gpt': "https://s3.amazonaws.com/models.huggingface.co/bert/openai-gpt-merges.txt",
-}
-PRETRAINED_VOCAB_POSITIONAL_EMBEDDINGS_SIZE_MAP = {
-    'openai-gpt': 512,
-}
-VOCAB_NAME = 'vocab.json'
-MERGES_NAME = 'merges.txt'
 
 def get_pairs(word):
     """
